@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--html안에 글자의 기본크기 설정-->
+    <style>
+        html {
+            
+            font-size: 16px;
+        }
+        span.em {
+            font-size: 2em;
+        }
+        span.rem {
+            font-size: 2rem;
+        }
+        /*viewport로 사이즈 설정*/
+        .box1 {
+            background-color: blue;
+            width: 100vw;
+            height: 50vw;
+        }
+        .box2 {
+            background-color: red;
+            width: 100vw; 
+            height: 50vw;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+        }
+        /*#:아이디로 selector*/
+        #dave {
+            color:blue;
+        }
+        .dave {
+            color: green;
+        }
+        /*속성으로 디자인 주기*/
+        [data-value="david"] {
+            color: pink;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    기본 사이즈
+    <span class="em">
+        <span class="em">중첩1<span class="em">중첩2</span></span>
+    </span>
+    <br />
+    기본 사이즈
+    <span class="rem">
+        <span class="rem">중첩1<span class="rem">중첩2</span></span>
+    </span>
+
+    <!-- <div class="box1">box1</div>
+    <div class="box2">box2</div> -->
+    <h1 id="dave">아이디로 선택</h1>
+    <h1 class="dave">클래스로 선택</h1>
+    <p data-value="david">속성으로 선택</p>
+</body>
+</html>
